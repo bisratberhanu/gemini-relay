@@ -21,8 +21,9 @@ except ValueError as e:
 
 
 # Define the model to use
-model = genai.GenerativeModel('gemini-2.5-flash')
-
+MODEL_NAME = "gemma-3-27b-it"
+model = genai.GenerativeModel(MODEL_NAME)
+# gemini-2.5-flash
 # This is the endpoint your client will call
 @app.route('/generate', methods=['POST'])
 def generate_text():
