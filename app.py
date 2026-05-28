@@ -21,7 +21,7 @@ except ValueError as e:
 
 
 # Define the model to use
-MODEL_NAME = "gemma-3-27b-it"
+MODEL_NAME = "gemma-4-31b-it"
 model = genai.GenerativeModel(MODEL_NAME)
 # gemini-2.5-flash
 # This is the endpoint your client will call
